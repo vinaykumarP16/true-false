@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TorF</title>
+</head>
+<body>
+	<br>
+	<h1>please fill in the blanks with right answers</h1>
+	<br>
+<button id="1">1</button>
+<button id="2">2</button>
+<button id="3">3</button>
+<button id="4">4</button>
+<button id="5">5</button>
+<button id="6">6</button>
+
+<p>
+	<ol>
+		<li>capital of india is <span id="output1">______</span>. <br></li>
+		<li>statue of liberty is located in <span id="output2">______</span>.<br></li>
+		<li>biggest continent is <span id="output3">_____</span>. <br></li>
+		<li>biggest animal is <span id="output4">_____</span> .<br></li>
+		<li>most famous sport in india is <span id="output5">____</span>.<br></li> 
+		<li>india got independence on year <span id="output6">______</span>.<br></li>
+	</ol>
+</p> 
+
+<p id="generate"> results <br>
+1<span id="output7"><span id="output8"></span></span>
+2<span id="output9"><span id="output10"></span></span>
+3<span id="output11"><span id="output12"></span></span>
+4<span id="output13"><span id="output14"></span></span>
+5<span id="output15"><span id="output16"></span></span>
+6<span id="output17"><span id="output18"></span></span> </p>
+</body>
+</html>
+
+<script type="text/javascript">
+	document.getElementById("1").onclick = function(){
+	var name = prompt("capital of india is");
+	var name1=name.toLowerCase().replace(/ /g,"");
+  document.getElementById("output1").innerText = name1;
+  if (name1=="delhi") {
+  	document.getElementById("output7").innerText="true";
+  }
+  else{
+  	document.getElementById("output8").innerText="false";
+  }
+}
+
+document.getElementById("2").onclick = function(){
+	var country = prompt("statue of liberty is located in");
+	var country1=country.toLowerCase().replace(/ /g,"");
+  document.getElementById("output2").innerText = country1;
+  if (country1=="newyork") {
+  	document.getElementById("output9").innerText="true";
+  }
+ else{
+  	document.getElementById("output10").innerText="false";
+  }
+}
+
+document.getElementById("3").onclick = function(){
+	var con = prompt("biggest continenet is");
+	var con1=con.toLowerCase().replace(/ /g,"");
+  document.getElementById("output3").innerText = con1;
+  if (con1=="asia") {
+  	  	document.getElementById("output11").innerText="true";
+  }
+ else{
+  	document.getElementById("output12").innerText="false";
+  }
+}
+
+document.getElementById("4").onclick = function(){
+	var animal = prompt("biggest animal is");
+	var ani=animal.toLowerCase().replace(/ /g,"");
+  document.getElementById("output4").innerText = ani;
+  if (ani=="bluewhale") {
+  	  	document.getElementById("output13").innerText="true";
+  }
+ else{
+  	document.getElementById("output14").innerText="false";
+  }
+}
+
+
+document.getElementById("5").onclick = function(){
+	var spo = prompt("Enter sport");
+	var spo1=spo.toLowerCase().replace(/ /g,"");
+  document.getElementById("output5").innerText = spo1;
+  if (spo1=="cricket") {
+  	  	document.getElementById("output15").innerText="true";
+  }
+ else{
+  	document.getElementById("output16").innerText="false";
+  }
+}
+
+
+document.getElementById("6").onclick = function(){
+	var year = prompt("Enter year");
+	var yr1=year.toLowerCase().replace(/ /g,"");
+	document.getElementById("output6").innerText = yr1;
+	if (yr1=="1947") {
+  	  	document.getElementById("output17").innerText="true";
+  }
+ else{
+  	document.getElementById("output18").innerText="false";
+  }
+}
+
+
+</script>
+
+<style type="text/css">
+	body{
+		padding: 0;
+		margin: 0;
+		color: blue;
+	}
+	h1{
+		color: green;
+		text-align: center;
+		display: grid;
+	}
+	p{
+		text-align: center;
+		display: grid;
+	}
+
+	button{
+		margin: 20px;
+		text-align: center;
+		color: black;
+		align-self: center;
+		display: inline-grid;
+	}
+	button:hover{
+		color: orange;
+		transition: 1;
+		border-radius: 10px;
+	}
+	span{
+		color: red;
+	}
+</style>
