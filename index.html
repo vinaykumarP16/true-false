@@ -15,14 +15,14 @@
 <button id="6">6</button>
 
 <p>
-	<ol>
-		<li>capital of india is <span id="output1">______</span>. <br></li>
-		<li>statue of liberty is located in <span id="output2">______</span>.<br></li>
-		<li>biggest continent is <span id="output3">_____</span>. <br></li>
-		<li>biggest animal is <span id="output4">_____</span> .<br></li>
-		<li>most famous sport in india is <span id="output5">____</span>.<br></li> 
-		<li>india got independence on year <span id="output6">______</span>.<br></li>
-	</ol>
+	<ul>
+		<li>1. capital of india is <span id="output1">______</span>. <br></li>
+		<li>2. statue of liberty is located in <span id="output2">______</span>.<br></li>
+		<li>3. biggest continent is <span id="output3">_____</span>. <br></li>
+		<li>4. biggest animal is <span id="output4">_____</span> .<br></li>
+		<li>5. most famous sport in india is <span id="output5">____</span>.<br></li> 
+		<li>6. india got independence on year <span id="output6">______</span>.<br></li>
+	</ul>
 </p> 
 
 <p id="generate"> results <br>
@@ -117,16 +117,24 @@ document.getElementById("6").onclick = function(){
 	body{
 		padding: 0;
 		margin: 0;
-		color: blue;
+		background-color: #80f5fb;
+		align-items: center;
+		text-align: center;
 	}
 	h1{
-		color: green;
+		color: #d42903;
 		text-align: center;
 		display: grid;
 	}
 	p{
 		text-align: center;
 		display: grid;
+	}
+	li{
+		text-align: center;
+		align-items: center;
+		list-style: none;
+		font-size: 20px;
 	}
 
 	button{
@@ -142,6 +150,19 @@ document.getElementById("6").onclick = function(){
 		border-radius: 10px;
 	}
 	span{
-		color: red;
+		color: blue;
+		font-family: sans-serif;
+		font-size: 25px;
 	}
+
+	#output7,#output9,#output11,#output13,#output15,#output17{
+		color: green;
+		font-size: 15px;
+	}
+
+	#output8,#output10,#output12,#output14,#output16,#output18{
+		color: red;
+		font-size: 15px;
+	}
+
 </style>
